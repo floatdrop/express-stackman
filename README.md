@@ -18,16 +18,17 @@ if (process.env.NODE_ENV === 'development') {
 
 ## Options
 
- * `context` - The lines of context to be loaded on each side of the callsite line (default: 7)
+All options passed to [stackman](https://github.com/watson/stackman#api) directly.
+
+ * `context` - The lines of context to be loaded on each side of the callsite line (default: `7`)
 
 You can see instant example by doing this:
 
 ```bash
-git clone https://github.com/floatdrop/node-parsetrace && cd $_
-npm i && node example
+npm i
+node example
+open http://localhost:3000
 ```
-
-Open [`http://localhost:3000`](http://localhost:3000) for exception example or [`http://localhost:3000/object`](http://localhost:3000/object) for object example.
 
 ![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/screenshot.png)
 
