@@ -6,21 +6,17 @@ var request = require('supertest');
 var expressStackman = require('..');
 
 describe('main tests', function () {
+    var app;
     beforeEach(function () {
         delete require.cache[require.resolve('./app')];
-        this.app = require('./app');
+        app = require('./app');
     });
 
     it('generates html', function (done) {
-        this.app.use(expressStackman());
-        this.app.use(function (err, req, res, next) {
-            res.statusCode = 500;
-            res.end(err.stack);
-            next();
-        });
-        request(this.app)
+        app.use(expressStackman());
+        request(app)
             .get('/error')
-            .expect(/<html/g)
+            .expect(500)
             .expect(/SECRETLINE/, done);
     });
 });
