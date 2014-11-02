@@ -1,0 +1,30 @@
+{
+  "name": "express-stackman",
+  "version": "0.0.0",
+  "description": "Show rich stacktraces in express application",
+  "keywords": [
+    "express",
+    "stackman",
+    "stacktrace",
+    "error",
+    "middleware"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec",
+    "example": "node example"
+  },
+  "repository": "https://github.com/floatdrop/express-stackman.git",
+  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hogan.js": "^3.0.2",
+    "multiline": "^1.0.1",
+    "stackman": "^0.2.2"
+  },
+  "devDependencies": {
+    "express": "~4",
+    "mocha": "^2.0.1",
+    "supertest": "^0.14.0"
+  }
+}
