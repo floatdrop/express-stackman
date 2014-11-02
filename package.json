@@ -1,6 +1,6 @@
 {
   "name": "express-stackman",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Show rich stacktraces in express application",
   "keywords": [
     "express",
