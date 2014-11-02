@@ -29,7 +29,7 @@ npm i && node example
 
 Open [`http://localhost:3000`](http://localhost:3000) for exception example or [`http://localhost:3000/object`](http://localhost:3000/object) for object example.
 
-![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/screenshot.png)
+![screen shot 2014-11-02 at 6 41 19 pm](https://cloud.githubusercontent.com/assets/365089/4875415/fa5a8d94-6295-11e4-92f0-def91d5a7b9a.png)
 
 (If you not - write an issue, we will figure it out)
 
