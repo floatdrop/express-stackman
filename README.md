@@ -1,6 +1,6 @@
-# express-stackman [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
+# express-[stackman](https://github.com/watson/stackman) [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
 
-Enhanced express error handler which inserts source code within stack frames.
+Enrich Express error handler which inserts source code within stack frames.
 
 ## Usage
 
@@ -20,8 +20,6 @@ if (process.env.NODE_ENV === 'development') {
 
  * `context` - The lines of context to be loaded on each side of the callsite line (default: 7)
 
-## Html output
-
 You can see instant example by doing this:
 
 ```bash
@@ -30,8 +28,6 @@ npm i && node example
 ```
 
 Open [`http://localhost:3000`](http://localhost:3000) for exception example or [`http://localhost:3000/object`](http://localhost:3000/object) for object example.
-
-On [`http://localhost:3000`](http://localhost:3000) you should see something like that:
 
 ![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/screenshot.png)
 

@@ -9,7 +9,7 @@ var template = multiline(function(){/*
 <html>
     <head>
         <title>Error</title>
-        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/floatdrop/express-error-with-sources/master/lib/view/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/floatdrop/express-stackman/master/css/index.css">
     </head>
     <body>
     <h1>Error</h1>
@@ -32,7 +32,7 @@ var template = multiline(function(){/*
     </ul>
     </body>
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/floatdrop/express-error-with-sources/master/lib/view/prettify.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/floatdrop/express-stackman/master/css/prettify.css">
 </html>
 */});
 
