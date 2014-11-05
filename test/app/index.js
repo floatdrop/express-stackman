@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
     res.send('Hello World');
 });
 
-app.get('/error', function (req, res) {
+app.get('/error', function () {
     // SECRETLINE
     require('./foobar');
 });
