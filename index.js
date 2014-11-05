@@ -61,8 +61,9 @@ function prepeare(stack) {
 }
 
 module.exports = function (options) {
+    var parse = stackman(options);
     return function (err, req, res, next) {
-        stackman(options)(err, function (stack) {
+        parse(err, function (stack) {
             stack = prepeare(stack);
             stack.message = err.message || err.toString();
             res
