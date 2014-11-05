@@ -68,8 +68,6 @@ module.exports = function (options) {
             res
                 .status(500)
                 .send(page.render(stack));
-
-            next();
         });
     };
 };
