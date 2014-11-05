@@ -8,9 +8,15 @@ Install module:
 
 `npm i express-stackman --save`
 
-Insert middleware into your express app:
+Insert middleware into your express application __after all routes and other middlewares__:
 
 ```javascript
+var app = require('express')();
+
+app.get('/', function () {
+    throw new Error('Bang!');
+});
+
 if (process.env.NODE_ENV === 'development') {
     app.use(require('express-stackman')());
 }
