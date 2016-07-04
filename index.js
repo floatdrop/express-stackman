@@ -23,7 +23,7 @@ var page = hogan.compile(multiline(function(){/*
     </head>
     <body>
     <h1>Error</h1>
-    <h2><i>500</i> — {{message}}</h2>
+    <h2><i>{{status}}</i> — {{message}}</h2>
     <ul id="stacktrace">
     {{#frames}}
         <li>{{filename}}:{{line}}:{{column}}</li>
@@ -66,8 +66,9 @@ module.exports = function (options) {
         parse(err, function (stack) {
             stack = prepeare(stack);
             stack.message = err.message || err.toString();
+            stack.status = err.status || 500;
             res
-                .status(500)
+                .status(stack.status)
                 .send(page.render(stack));
         });
     };
