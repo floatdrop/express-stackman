@@ -31,7 +31,7 @@ var page = hogan.compile(multiline(function(){/*
     {{/frames}}
     </ul>
     </body>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/floatdrop/express-stackman/master/css/prettify.css">
 </html>
 */}));
